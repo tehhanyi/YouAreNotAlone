@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="560.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="projname" fill="WHITE" stroke="RED" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" text="YOU ARE NOT ALONE" textAlignment="CENTER">
+               <font>
+                  <Font name="Swiss 721 Bold BT" size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#Chat" prefHeight="60.0" prefWidth="250.0" stylesheets="@application.css" text="CHAT" textFill="RED">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button mnemonicParsing="false" onAction="#Quiz" prefHeight="60.0" prefWidth="250.0" stylesheets="@application.css" text="PERSONALITY" textFill="RED">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Button>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="WNRS x HY" BorderPane.alignment="BOTTOM_RIGHT">
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Text>
+   </bottom>
+   <top>
+      <Button mnemonicParsing="false" onAction="#AboutUs" stylesheets="@application.css" text="About Us" textFill="RED" BorderPane.alignment="TOP_LEFT">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="transparent" />
+            <String fx:value="box" />
+         </styleClass>
+      </Button>
+   </top>
+</BorderPane>

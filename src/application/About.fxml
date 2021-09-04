@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" styleClass="secondary-background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AboutController">
+   <center>
+      <VBox alignment="CENTER" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Text fill="WHITE" stroke="RED" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" text="YOU ARE NOT ALONE" textAlignment="CENTER">
+               <font>
+                  <Font name="Swiss 721 Bold BT" size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inspired by" textOrigin="CENTER">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" onMouseClicked="#GotoWNRS" pickOnBounds="true" preserveRatio="true" styleClass="no-redbox">
+                     <image>
+                        <Image url="@../img/WNRS.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#c42424" strokeType="OUTSIDE" strokeWidth="0.0" text="x" textAlignment="CENTER" wrappingWidth="100.0">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="120.0" fitWidth="120.0" onMouseClicked="#GotoMBTI" pickOnBounds="true" preserveRatio="true" styleClass="no-redbox">
+                     <image>
+                        <Image url="@../img/logo16_png.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text fill="#c42424" strokeType="OUTSIDE" strokeWidth="0.0" text="A project dedicated to mental health. People have refused to admit or identify their problems and tend to bottle it up, which often leads to isolation or worse still, committing suicide. Since the COVID-19 pandemic struck us all without notice, it has led to the suppressed emotions to surface and bring about mental health issues where some of which even led to suicidal thoughts. Additionally, the COVID-19 pandemic has also brought about retrenchment in various companies and organizations which has led working adults to have heightened stress levels. Furthermore, news reports have stated that people who fall under this category have also developed and heightened mental health issues due to being distressed because of the circumstances. All these have resulted in suicide rates increasing immensely due to mental health issues" textAlignment="JUSTIFY" textOrigin="CENTER" wrappingWidth="1000.0">
+                     <font>
+                        <Font name="System Italic" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ImageView fitHeight="250.0" fitWidth="250.0" onMouseClicked="#GotoIGpost" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;" styleClass="no-redbox">
+                     <image>
+                        <Image url="@../img/suciderates.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="30.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Home" styleClass="aboutbox" stylesheets="@application.css" text="Back to Homepage" textFill="#b70000">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Text fx:id="animation" fill="WHITE" stroke="RED" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" text="HOW ARE YOU REALLY? HOW ARE YOU REALLY? HOW ARE YOU REALLY? HOW ARE YOU REALLY? HOW ARE YOU REALLY?12345" BorderPane.alignment="CENTER_LEFT">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </Text>
+   </top>
+   <bottom>
+      <Text fx:id="animation1" fill="WHITE" stroke="RED" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" text="HOW ARE YOU REALLY? HOW ARE YOU REALLY? HOW ARE YOU REALLY? HOW ARE YOU REALLY? HOW ARE YOU REALLY?" BorderPane.alignment="CENTER_LEFT">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+   </bottom>
+</BorderPane>

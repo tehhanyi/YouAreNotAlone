@@ -1,0 +1,41 @@
+.primary-background{
+	-fx-background-color: #FF0000;
+	
+}
+
+.secondary-background{
+	-fx-background-color: #ffffff;
+}
+
+.transparent{
+	-fx-background-color:rgba(0,0,0,0);
+}
+
+.button{
+	-fx-background-color: rgba(0,0,0,0);
+	-fx-background-radius:1;
+    -fx-border-color:rgba(0,0,0,0);
+    -fx-border-width: 3 3 3 3;
+}
+.button:hover {
+    -fx-background-color:rgba(0,0,0,0);
+    -fx-background-radius:3;
+    -fx-border-color:#ff0000;
+    -fx-border-width: 3 3 3 3;
+    -fx-border-radius:1;
+}
+.button:selected {
+    -fx-background-color:rgba(0,0,0,0);
+    -fx-background-radius:3;
+    -fx-border-color:#ff0000;
+    -fx-border-width: 3 3 3 3;
+    -fx-border-radius:1;
+}
+.red-bar{ -fx-accent: red;}
+
+.no-redbox:hover{
+	-fx-border-color:rgba(0,0,0,0);
+	-fx-scale-x: 1.3;
+    -fx-scale-y: 1.3;
+    -fx-scale-z: 1.3;
+}

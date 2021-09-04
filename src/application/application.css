@@ -1,0 +1,72 @@
+.primary-background{
+	-fx-background-color: #FF0000;
+	
+}
+
+.secondary-background{
+	-fx-background-color: #ffffff;
+}
+
+.transparent{
+	-fx-background-color:rgba(0,0,0,0);
+}
+
+.button{
+	-fx-background-color: rgba(0,0,0,0);
+	-fx-background-radius:1;
+    -fx-border-color:rgba(0,0,0,0);
+    -fx-border-width: 3 3 3 3;
+}
+.button:hover {
+    -fx-background-color:rgba(0,0,0,0);
+    -fx-background-radius:3;
+    -fx-border-color:#ff0000;
+    -fx-border-width: 3 3 3 3;
+    -fx-border-radius:1;
+}
+
+.no-redbox:hover{
+	-fx-border-color:rgba(0,0,0,0);
+	-fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+.aboutbox{
+	-fx-border-color:#ff0000;
+    -fx-border-width: 3 3 3 3;
+}
+.box:hover,.aboutbox:hover{
+	-fx-background-color:#ff0000;
+	-fx-text-fill:#ffffff;
+}
+.box:active,.box{
+	-fx-background-color: rgba(0,0,0,0);
+	-fx-background-radius:1;
+    -fx-border-color:rgba(0,0,0,0);
+    -fx-border-width: 3 3 3 3;
+    -fx-text-fill:#ff0000;
+}
+
+.scroll-bar:vertical {
+    -fx-pref-width: 30;
+    -fx-padding: 3;
+}
+
+.chatbox{
+  /*-fx-background-color:#ffffff;
+  /*-fx-min-height:400px;
+  //-fx-min-width:200px; */
+
+  }
+
+  .label{
+  /*-fx-background-color:red;
+  /*-fx-pref-height:20px;
+  -fx-pref-width:200px; */
+  }
+
+/*.heart:hover{
+	-fx-shape: M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z;
+}*/
